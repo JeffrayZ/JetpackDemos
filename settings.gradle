@@ -1,0 +1,10 @@
+include ':viewmodel'
+include ':lifecycle'
+
+include ':databinding'
+project(':databinding').projectDir = new File(settingsDir, 'databinding')
+
+include ':navigation'
+project(':navigation').projectDir = new File(settingsDir, 'navigation')
+
+rootProject.name = "Jetpack"
